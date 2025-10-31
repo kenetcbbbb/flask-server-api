@@ -50,10 +50,6 @@ def git_status():
     except Exception as e:
         return jsonify({"error": str(e)}), 400
 
-    # - - - Новый маршрут - - -
 
-@app.route("/hello/<name>")
-def hello_name(name):
-    return jsonify({"message": f"Hello, {name}!"})
-if __name__ =="__main__":
+if __name__ == "__main__":
     app.run(debug=True)
